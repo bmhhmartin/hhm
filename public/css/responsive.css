@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #2ecd71;
+    --secondary-color: #dc4a38;
+    --text-color: #464646;
+    --white-color: #ffffff;
+    --red-color: #ff3b4e;
+    --blue-color: #1da1f2;
+}
+/*color-palette ends*/
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .topContent {
+        padding-top: 6rem;
+    }
+    .footerMenu {
+        margin-left: 20px;
+    }
+    /*Home page ends*/
+
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .myPhoto {
+        width: 240px;
+        margin-top: 9rem;
+    }
+    .topContent {
+        padding-top: 6rem;
+        text-align: center !important;
+    }
+    .topContent .topDes{
+        text-align: center;
+    }
+    .topContent .topSubTitle {
+        padding: 12px 0px;
+    }
+    .videoDescription {
+        text-align: justify;
+    }
+    .footerMenu {
+        margin-left: 25px;
+    }
+    /*Home page ends*/
+
+
+}
+/*Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 767px) {
+    .desktopMenu{
+        display: none;
+    }
+    .mobileMenu{
+        display: block;
+    }
+    .mobileMenu .logoPart button{
+        background: transparent;
+        font-size: 25px;
+        color: var(--white-color);
+        border: none;
+        outline: 0;
+    }
+    .mobileMenu .logoPart{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background: rgba(0, 0, 0, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .mobileMenu .logoPart h2{
+        color: var(--primary-color);
+    }
+    .mobileMenu .mainMenu{
+        background: var(--text-color);
+        height: 100vh;
+        transform: translateX(-100%);
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileMenu .mainMenu.active{
+        transform: translateX(0);
+        top: 60px;
+    }
+    .mobileMenu .mainMenu ul{
+        padding-left: 0;
+    }
+    .mobileMenu .mainMenu ul li{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .mobileMenu .mainMenu ul li a{
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .fullDetails {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .fullDetails .topContent {
+        width: 100%;
+        text-align: center;
+    }
+    .topContent .topSubTitle {
+        padding: 5px 0px;
+        font-size: 20px;
+    }
+    .topContent .topDes{
+        text-align: center;
+    }
+    .topContent .topTitle {
+        font-size: 30px;
+    }
+    .topFixedBanner .imageCover img {
+        object-fit: contain;
+        border: none;
+    }
+    .topFixedBanner .imageCover {
+        height: 200px;
+        float: none;
+    }
+    .topContent .topDes {
+        padding: 0px 0px 0px;
+    }
+    .videoCard {
+        padding: 6rem 1rem;
+    }
+    .meetingDescription {
+        font-size: 16px;
+    }
+    .meetingImg {
+        margin-top: 20px;
+    }
+    /*Home page ends*/
+
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px)and (max-width: 575px) {
+    .topContent .topDes{
+        text-align: center;
+    }
+    .navBackground{
+        background: #0c5460;
+    }
+    .details {
+        font-size: 14px;
+    }
+    .topContent .topTitle {
+        font-size: 30px;
+    }
+    .topContent .topSubTitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .topContent {
+        padding-top: 1rem;
+        text-align: center !important;
+    }
+    .topContent .topSubTitle {
+        padding: 5px 0px;
+    }
+    .topContent .topDes {
+        padding: 0px 0px 0px;
+        font-size: 13px;
+    }
+    .videoCard {
+        padding: 6rem 1rem;
+        margin: 50px auto;
+    }
+    .videoDescription {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .recentSubTitle {
+        font-size: 14px;
+    }
+    .meetingImg {
+        margin: 20px 0px;
+    }
+    .footerMenu {
+        padding-left: 15px;
+    }
+    .copyRight a {
+        font-size: 14px;
+    }
+    /*Home page ends*/
+   
+}
+/*Extra Small devices (landscape phones, 320px and up)*/
+
+
