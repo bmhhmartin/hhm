@@ -45,7 +45,7 @@ const AllInfo =()=>{
                                     </div>
                                     <h3 className="timelineTitle">Software Engineer</h3>
                                     <p className="timelineDescription">
-                                        Now I am working in SELISE Digital Platforms as a Software Engineer. SELISE is a Multinational Software Company which situated 4 countries over the world. Its head quarter situated in Zurich, Switzerland.
+                                        Now I am working in SELISE Digital Platforms as a Software Engineer. SELISE is a Multinational Software Company which situated 6 countries over the world. Its head quarter situated in Zurich, Switzerland.
                                     </p>
                                 </Link>
                             </div>

@@ -16,7 +16,7 @@ const TopBanner =()=>{
                             <div className="topContent text-left">
                                 <h1 className="topTitle">Md H H Martin</h1>
                                 <h4 className="topSubTitle">Software Engineer</h4>
-                                <p className="topDes">I am professional Software Engineer. I completed my BSc in Computer Science and Engineering from Daffodil International University. Now I am working in SELISE Digital Platforms as a Software Engineer. SELISE is a Multinational Software Company which situated 4 countries ( Switzerland, Bangladesh, Arab Emirates, Bhutan ) over the world. Its head quarter situated.........</p>
+                                <p className="topDes">I am professional Software Engineer. I completed my BSc in Computer Science and Engineering from Daffodil International University. Now I am working in SELISE Digital Platforms as a Software Engineer. SELISE is a Multinational Software Company which situated 6 countries over the world. Its head quarter situated.........</p>
                                 <Link href="/about" className="primary--btn">Read More</Link>
                             </div>
                         </div>
