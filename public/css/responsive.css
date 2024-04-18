@@ -7,21 +7,14 @@
     --blue-color: #1da1f2;
 }
 /*color-palette ends*/
-
-
-@media(max-width: 1200px) {
-    .footerMenu {
-        margin-left: 20px;
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 100%;
     }
-    /*Home page ends*/
-
 }
+
 /*Large devices (desktops, 992px and up)*/
 @media (max-width: 991px) {
-    .myPhoto {
-        width: 240px;
-        margin-top: 9rem;
-    }
     .topContent {
         padding-top: 6rem;
         text-align: center !important;
@@ -34,9 +27,6 @@
     }
     .videoDescription {
         text-align: justify;
-    }
-    .footerMenu {
-        margin-left: 25px;
     }
     /*Home page ends*/
 
@@ -53,10 +43,13 @@
     }
     .mobileMenu .logoPart button{
         background: transparent;
-        font-size: 25px;
+        font-size: 20px;
         color: var(--white-color);
         border: none;
         outline: 0;
+        background: var(--red-color);
+        height: 40px;
+        width: 50px;
     }
     .mobileMenu .logoPart{
         display: flex;
@@ -74,15 +67,12 @@
         color: var(--primary-color);
     }
     .mobileMenu .mainMenu{
-        background: var(--text-color);
-        height: 100vh;
+        background: linear-gradient(181deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
+        height: 93vh;
         transform: translateX(-100%);
         position: fixed;
         width: 100%;
         z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .mobileMenu .mainMenu.active{
         transform: translateX(0);
@@ -90,14 +80,26 @@
     }
     .mobileMenu .mainMenu ul{
         padding-left: 0;
+        margin-top: 100px;
     }
     .mobileMenu .mainMenu ul li{
-        padding: 10px 20px;
         text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-bottom: 1px solid white;
+    }
+    .mobileMenu .mainMenu ul li:first-child{
+        border-top: 1px solid white;
     }
     .mobileMenu .mainMenu ul li a{
         font-size: 16px;
         color: #ffffff;
+        padding: 20px;
+        background: linear-gradient(181deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
+        display: block;
+    }
+    .mobileMenu .mainMenu ul li a.active{
+        background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(159 13 13) 90%);
     }
     .fullDetails {
         gap: 20px;
@@ -139,6 +141,22 @@
     }
     .myInfo {
         margin-top: 30px;
+    }
+    .nav-tabs {
+        display: block;
+    }
+    .footerTitle{
+        text-align: center;
+    }
+    .footerMenu li{
+        text-align: center;
+    }
+    .socialDes {
+        text-align: center;
+    }
+    .lastMenu {
+        justify-content: center;
+        margin-bottom: 50px;
     }
     /*Home page ends*/
 

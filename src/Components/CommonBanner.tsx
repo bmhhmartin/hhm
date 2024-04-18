@@ -14,7 +14,7 @@ const CommonBanner =()=>{
                     <Container className="bannerContent">
                         <Row>
                             <Col className="text-center">
-                                <h4 className="bannerSub">{pathName}</h4>
+                                <h4 className="bannerSub">{pathName} Page</h4>
                             </Col>
                         </Row>
                     </Container>

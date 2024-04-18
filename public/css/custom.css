@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,ol,ul,p,address {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+ol, ul {
+    padding-left: 0;
+}
 body {
     overflow-x: hidden;
     font-family: var(--font-raleway);
@@ -135,9 +138,8 @@ header .mainMenu ul li a.active{
     width: 60%;
 }
 .topContent .topTitle{
-    color: #30cd71;
+    color: var(--primary-color);
     font-family: var(--font-poppins);
-    font-weight: 700;
 }
 .topContent .topSubTitle{
     font-family: var(--font-raleway);
@@ -958,14 +960,15 @@ header .mainMenu ul li a.active{
 .summaryContent{
     padding-top: 10%;
 }
-.summaryContent h1{
+.summaryContent h2{
+    font-family: var(--font-poppins);
     color: var(--white-color);
     font-weight: 700;
     font-size: 50px;
 }
 .summaryContent h4{
     color: var(--white-color);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
     padding: 20px 0px;
 }
@@ -1110,11 +1113,11 @@ header .mainMenu ul li a.active{
 .serviceCard h2{
     font-size: 18px;
     font-weight: 600;
-    color: var(--blue-color);
+    color: var(--primary-color);
     margin: 10px 0px;
 }
 .serviceCard p{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 300;
     color: var(--text-color);
@@ -1298,17 +1301,44 @@ input:-internal-autofill-selected{
     border-bottom-right-radius: 5px;
     margin-bottom: 20px;
 }
+.mainCard .cardImage{
+    position: relative;
+    height: 200px;
+}
 .mainCard .cardImage img{
-    width: 100%;
+    object-fit: cover;
 }
 .mainCard .cardBody{
     padding: 15px;
+    text-align: center;
 }
 .mainCard .cardBody h4{
     font-size: 20px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+.mainCard .cardButtons ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainCard .cardButtons ul li{
+    width: 100%;
+    text-align: center;
+}
+.mainCard .cardButtons ul li a{
+    background: var(--blue-color);
+    padding: 7px 20px;
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.mainCard .cardButtons ul li a:hover{
+    text-decoration: none;
+}
+.mainCard .cardButtons ul li a.red-link{
+    background: #FF5D55;
 }
 .clientImg{
     width: 150px;

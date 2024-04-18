@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+import Link from 'next/link';
 import { Col, Container, Row } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -10,109 +11,119 @@ const AllPortfolio =()=>{
         <>
             <Container>
                 <h2 className="title">My Portfolio</h2>
-                <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" justify>
+                <Tabs defaultActiveKey="home" id="justify-tab-example" className="mb-3" justify>
                     <Tab eventKey="home" title="Web Development">
                         <Row>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    </div>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link href="/">Details</Link></li>
+                                            <li><Link href="/" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
                                     </div>
-                                </div>
-                            </Col>
-                            <Col lg={3} md={6} sm={6}>
-                                <div className="mainCard">
-                                    <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
-                                    </div>
-                                    <div className="cardBody">
-                                        <h4>Card Title</h4>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={3} md={6} sm={6}>
-                                <div className="mainCard">
-                                    <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
-                                    </div>
-                                    <div className="cardBody">
-                                        <h4>Card Title</h4>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link href="/">Details</Link></li>
+                                            <li><Link href="/" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
                     </Tab>
                     <Tab eventKey="profile" title="Graphics Design">
-                    <Row>
+                        <Row>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
-                                        <h4>Card Title</h4>
+                                        <h4>Logo Design</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    </div>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link target='_blank' href="https://drive.google.com/drive/u/0/folders/1ZvyVm5FkAExQk2FigmPvWlbPag0wMBVM" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
-                                        <h4>Card Title</h4>
+                                        <h4>Banner Design</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    </div>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link target='_blank' href="https://drive.google.com/drive/u/0/folders/1vArTv_lYCfvwnJW4-lt_w_pfHco7HVUR" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
-                                        <h4>Card Title</h4>
+                                        <h4>Icon Design</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    </div>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link target='_blank' href="https://drive.google.com/drive/u/0/folders/1tFJlTtua2W322UTxH39yn6cyFro_xHH4" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
-                                        <h4>Card Title</h4>
+                                        <h4>Poster Design</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quaerat quisquam voluptas quasi veritatis ab rerum repudiandae ratione perferendis error?</p>
+                                    </div>
+                                    <div className="cardButtons">
+                                        <ul>
+                                            <li><Link target='_blank' href="https://drive.google.com/drive/u/0/folders/1blxvy7GhUpUtakxERpyRP7r_VVuzNkVs" className='red-link'>Link</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
                     </Tab>
                     <Tab eventKey="longer-tab" title="SEO">
-                    <Row>
+                        <Row>
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -123,7 +134,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -134,7 +145,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -145,7 +156,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -160,7 +171,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -171,7 +182,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -182,7 +193,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -193,7 +204,7 @@ const AllPortfolio =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={gallery} fill={true} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>

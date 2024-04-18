@@ -8,33 +8,29 @@ const Summary =()=>{
                             <Row>
                                 <Col className="summaryContent" lg={12} md={12} sm={12}>
                                     <Row>
-                                        <Col className="text-center">
-                                            <h1>
-                                                10
-                                            </h1>
+                                        <Col lg={3} md={6} sm={6} className="text-center">
+                                            <h2>
+                                                81+
+                                            </h2>
                                             <h4>Total Projects</h4>
-                                            <hr className="bg-white w-25" />
                                         </Col>
-                                        <Col className="text-center">
-                                            <h1>
-                                                20
-                                            </h1>
+                                        <Col lg={3} md={6} sm={6} className="text-center">
+                                            <h2>
+                                                29+
+                                            </h2>
                                             <h4>Total Clients</h4>
-                                            <hr className="bg-white w-25" />
                                         </Col>
-                                        <Col className="text-center">
-                                            <h1>
-                                                30
-                                            </h1>
-                                            <h4>Total Line Code</h4>
-                                            <hr className="bg-white w-25" />
+                                        <Col lg={3} md={6} sm={6} className="text-center">
+                                            <h2>
+                                                1506+
+                                            </h2>
+                                            <h4>Cup of Coffee</h4>
                                         </Col>
-                                        <Col className="text-center">
-                                            <h1>
-                                                40
-                                            </h1>
+                                        <Col lg={3} md={6} sm={6} className="text-center">
+                                            <h2>
+                                                3+
+                                            </h2>
                                             <h4>Running Projects</h4>
-                                            <hr className="bg-white w-25" />
                                         </Col>
                                     </Row>
                                 </Col>

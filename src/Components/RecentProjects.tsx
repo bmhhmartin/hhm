@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-import gallery from '../images/gallery1.jpg';
+import recent from '../images/recent-project.jpg';
 
 const RecentProjects =()=>{
     return (
@@ -11,7 +11,7 @@ const RecentProjects =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={recent} width={300} height={250} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -22,7 +22,7 @@ const RecentProjects =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={recent} width={300} height={250} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -33,7 +33,7 @@ const RecentProjects =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={recent} width={300} height={250} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>
@@ -44,7 +44,7 @@ const RecentProjects =()=>{
                             <Col lg={3} md={6} sm={6}>
                                 <div className="mainCard">
                                     <div className="cardImage">
-                                        <Image src={gallery} width={300} height={250} alt='Project'></Image>
+                                        <Image src={recent} width={300} height={250} alt='Project'></Image>
                                     </div>
                                     <div className="cardBody">
                                         <h4>Card Title</h4>

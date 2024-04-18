@@ -19,7 +19,7 @@ const AllInfo =()=>{
                         </Col>
                         <Col lg={8} md={6} sm={12}>
                             <div className="myInfo">
-                                <h2>Md. Hasnat Hanjala Martin</h2>
+                                <h2>Engr. Md Hasnat Hanjala Martin</h2>
                                 <h3>Software Engineer</h3>
                                 <p>As a professional Software Engineer, I bring a wealth of knowledge and expertise acquired through my BSc in Computer Science and Engineering from Daffodil International University. Currently, I am employed at SELISE Digital Platforms, where I hold the role of Software Engineer. SELISE Digital Platforms is a distinguished multinational software company with a global presence across four countries: Switzerland, Bangladesh, the United Arab Emirates, and Bhutan. With its headquarters nestled in Zurich, Switzerland, SELISE stands as a beacon of innovation and excellence in the software industry.</p>
                                 <p>My journey in software engineering has been marked by a commitment to delivering high-quality solutions and pushing the boundaries of technology. At SELISE, I am part of a dynamic team that thrives on collaboration and creativity, working on projects that span various domains and industries. From conceptualization to implementation, I leverage my skills to craft robust software solutions that meet the unique needs of our clients.</p>
