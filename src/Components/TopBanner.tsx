@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
-import martin from "../images/pp.jpg";
+import martin from "../images/main-image.jpg";
 
 const TopBanner =()=>{
     return (
