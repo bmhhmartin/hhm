@@ -14,7 +14,7 @@ const AllInfo =()=>{
                     <Row>
                         <Col lg={4} md={6} sm={12}>
                             <div className="myPicture">
-                            <Image src={myImage} className="img-fluid" alt="my Image" height={400} width={300} ></Image>
+                                <Image src={myImage} className="img-fluid" alt="my Image" height={400} width={300} ></Image>
                             </div>
                         </Col>
                         <Col lg={8} md={6} sm={12}>

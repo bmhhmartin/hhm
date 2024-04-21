@@ -6,8 +6,6 @@ import { Poppins, Raleway } from "next/font/google";
 import "../../public/css/custom.css";
 import "../../public/css/responsive.css";
 
-
-
 const raleway = Raleway({
   weight: ['300','400', '500', '600', '700'],
   style: ['normal', 'italic'],
@@ -15,6 +13,7 @@ const raleway = Raleway({
   display: 'swap',
   variable: '--font-raleway'
 })
+
 const poppins = Poppins({
   weight: ['300','400', '500', '600', '700'],
   style: ['normal', 'italic'],

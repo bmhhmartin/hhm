@@ -1,11 +1,4 @@
-:root {
-    --primary-color: #2ecd71;
-    --secondary-color: #dc4a38;
-    --text-color: #464646;
-    --white-color: #ffffff;
-    --red-color: #ff3b4e;
-    --blue-color: #1da1f2;
-}
+
 /*color-palette ends*/
 @media (max-width: 1199.98px) {
     .container {
@@ -54,9 +47,15 @@
         width: 50px;
     }
     .mobileMenu .logoPart{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 10px 15px;
         background: rgba(0, 0, 0, 1);
         position: fixed;
@@ -69,15 +68,20 @@
         color: var(--primary-color);
     }
     .mobileMenu .mainMenu{
+        background: -o-linear-gradient(269deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
         background: linear-gradient(181deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
         height: 93vh;
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%);
         position: fixed;
         width: 100%;
         z-index: 1000;
     }
     .mobileMenu .mainMenu.active{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
         top: 60px;
     }
     .mobileMenu .mainMenu ul{
@@ -88,24 +92,29 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 700;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--white-color);
     }
     .mobileMenu .mainMenu ul li:first-child{
-        border-top: 1px solid white;
+        border-top: 1px solid var(--white-color);
     }
     .mobileMenu .mainMenu ul li a{
         font-size: 16px;
         color: #ffffff;
         padding: 20px;
+        background: -o-linear-gradient(269deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
         background: linear-gradient(181deg, rgb(15 15 15) 15%, rgb(163 163 163) 158.5%);
         display: block;
     }
     .mobileMenu .mainMenu ul li a.active{
+        background: -o-radial-gradient(10% 20%, circle, rgb(221, 49, 49) 0%, rgb(159 13 13) 90%);
         background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(159 13 13) 90%);
     }
     .fullDetails {
         gap: 20px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .fullDetails .imageCover {
         width: 100%;
@@ -125,7 +134,8 @@
         font-size: 30px;
     }
     .topFixedBanner .imageCover img {
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         border: none;
     }
     .topFixedBanner .imageCover {
@@ -160,19 +170,18 @@
         text-align: center;
     }
     .lastMenu {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 50px;
     }
     /*Home page ends*/
 
 }
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 320px)and (max-width: 575px) {
+@media (max-width: 575px) {
     .topContent .topDes{
         text-align: center;
-    }
-    .navBackground{
-        background: #0c5460;
     }
     .details {
         font-size: 14px;
@@ -219,5 +228,4 @@
    
 }
 /*Extra Small devices (landscape phones, 320px and up)*/
-
 

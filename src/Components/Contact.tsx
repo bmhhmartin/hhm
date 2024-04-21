@@ -1,4 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
+import { BsEnvelopeAtFill } from "react-icons/bs";
+import { FaGlobe, FaLocationDot, FaMobileButton } from "react-icons/fa6";
+
 
 const Contact =()=>{
     return (
@@ -13,7 +16,7 @@ const Contact =()=>{
                                         <div className="detailList">
                                             <h3>Address</h3>
                                             <p>
-                                                <i className="fas fa-map-marker-alt"></i>
+                                                <FaLocationDot />
                                                 Khandakar Manzil, Bashundhara Lane, Kazipara, Mirpur, Dhaka - 1216
                                             </p>
                                         </div>
@@ -22,7 +25,7 @@ const Contact =()=>{
                                         <div className="detailList">
                                             <h3>Phone</h3>
                                             <p>
-                                                <i className="fa fa-mobile"></i>
+                                                <FaMobileButton/>
                                                 +88 01811 230 332
                                             </p>
                                         </div>
@@ -31,7 +34,7 @@ const Contact =()=>{
                                         <div className="detailList">
                                             <h3>Email</h3>
                                             <p>
-                                                <i className="fas fa-envelope"></i>
+                                                <BsEnvelopeAtFill/>
                                                 engr.bmhhmartin@gmail.com
                                             </p>
                                         </div>
@@ -40,8 +43,8 @@ const Contact =()=>{
                                         <div className="detailList">
                                             <h3>Web</h3>
                                             <p>
-                                                <i className="fas fa-globe-americas"></i>
-                                                https//:www.bmhhmartin.com
+                                                <FaGlobe/>
+                                                https://bmhhmartin.vercel.app/
                                             </p>
                                         </div>
                                     </li>

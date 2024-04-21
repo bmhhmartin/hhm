@@ -42,16 +42,24 @@ a:hover{
 :root {
     --primary-color: #2ecd71;
     --secondary-color: #dc4a38;
+    --secondary-green: #00cd7b;
     --text-color: #464646;
     --white-color: #ffffff;
+    --black-color: #000000;
     --red-color: #ff3b4e;
     --blue-color: #1da1f2;
 }
 /*color-palette ends*/
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,15 +69,25 @@ header{
     padding: 20px 20px;
 }
 header .logoPart h2{
+    font-family: var(--font-poppins);
+    text-transform: uppercase;
     font-size: 22px;
     color: var(--primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
 }
 header .mainMenu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
 }
 header .mainMenu ul li a{
@@ -103,12 +121,17 @@ header .mainMenu ul li a.active{
     float: right;
 }
 .topFixedBanner .imageCover img{
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     border: 5px solid var(--secondary-color);
 }
 .topBannerOverlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
     position: relative;
 }
@@ -127,8 +150,12 @@ header .mainMenu ul li a.active{
     z-index: 100;
 }
 .fullDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 100px;
 }
 .fullDetails .imageCover{
@@ -136,6 +163,12 @@ header .mainMenu ul li a.active{
 }
 .fullDetails .topContent{
     width: 60%;
+}
+
+.fullDetails .topContent .contentList ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .topContent .topTitle{
     color: var(--primary-color);
@@ -149,7 +182,7 @@ header .mainMenu ul li a.active{
     color: var(--blue-color);
 }
 .topContent .topDes{
-    color: #ffffff;
+    color: var(--white-color);
     font-family: var(--font-poppins);
     font-weight: 300;
     font-size: 16px;
@@ -158,8 +191,18 @@ header .mainMenu ul li a.active{
     margin-bottom: 30px;
 }
 /*TopBanner components ends*/
-
-
+.errorDesign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.errorDesign h2{
+    color: var(--red-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+/*Global components ends*/
 .title{
     color: var(--primary-color);
     font-weight: 700;
@@ -170,14 +213,14 @@ header .mainMenu ul li a.active{
 }
 .subTitle{
     color: var(--secondary-color);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 600;
     padding: 10px 0px;
     font-size: 25px;
 }
 .subproTitle{
     color: var(--secondary-color);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 600;
     padding: 10px 0px;
     font-size: 20px;
@@ -185,7 +228,7 @@ header .mainMenu ul li a.active{
 .details{
     font-size: 16px;
     line-height: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-color);
     font-weight: 400;
     margin-bottom: 16px;
@@ -206,16 +249,27 @@ header .mainMenu ul li a.active{
     color: var(--primary-color);
     font-weight: 600;
     padding: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.cardTitle svg{
+    margin-right: 5px;
+    font-size: 15px;
 }
 .cardSubTitle{
     font-size: 16px;
     color: rgb(63, 63, 63);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 400;
     margin-bottom: 15px;
 }
 /*Card class ends*/
 .d-inline-grid{
+    display: -ms-inline-grid;
     display: inline-grid;
 }
 
@@ -230,7 +284,7 @@ header .mainMenu ul li a.active{
 .primary--btn{
     background: var(--secondary-color) !important;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     text-align: center;
     padding: 10px 25px;
     color: var(--white-color);
@@ -240,12 +294,14 @@ header .mainMenu ul li a.active{
 .primary--btn:hover{
     background: var(--primary-color) !important;
     color: var(--white-color);
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
     transition: all linear .4s;
 }
 .secondary--btn{
     background: var(--primary-color) !important;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     text-align: center;
     padding: 7px 25px;
     color: var(--white-color);
@@ -256,12 +312,14 @@ header .mainMenu ul li a.active{
 .secondary--btn:hover{
     background: var(--blue-color) !important;
     color: var(--white-color);
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
     transition: all linear .4s;
 }
 .third--btn{
      background: var(--blue-color) !important;
      font-size: 14px;
-     font-family: "Montserrat", sans-serif;
+     font-family: var(--font-poppins);
      text-align: center;
      padding: 7px 20px;
      color: var(--white-color);
@@ -272,11 +330,13 @@ header .mainMenu ul li a.active{
 .third--btn:hover{
     background: var(--secondary-color) !important;
     color: var(--white-color);
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
     transition: all linear .4s;
 }
 
 .close_btn{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     padding: 7px 15px;
     color: var(--white-color);
@@ -292,7 +352,7 @@ header .mainMenu ul li a.active{
     padding: 7px 30px;
     font-size: 16px;
     background: var(--blue-color);
-    color: white;
+    color: var(--white-color);;
     border: none;
     outline: 0;
 }
@@ -314,21 +374,25 @@ header .mainMenu ul li a.active{
 
 .nav-tabs {
     border-bottom: 1px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .nav-tabs .nav-link {
     font-weight: 700;
     border: 2px solid var(--white-color);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background: #2ECD71;
+    background: var(--primary-color);
     color: var(--white-color);
     text-transform: uppercase;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: var(--white-color);
-    background-color: #FF5D55;
+    background-color: var(--secondary-color);
     border-color: transparent;
 }
 .nav-link.active{
@@ -343,7 +407,7 @@ header .mainMenu ul li a.active{
     border: 0 solid transparent;
     border-right-width: 25px;
     border-left-width: 25px;
-    border-bottom: 20px solid #ff5d55;
+    border-bottom: 20px solid var(--secondary-color);
     left: 0;
     top: -22px;
     right: 0;
@@ -366,8 +430,8 @@ header .mainMenu ul li a.active{
     float: right;
 }
 .main-timeline .timeline-content{
-    color: #fff;
-    background: #f94419;
+    color: var(--white-color);
+    background: var(--red-color);
     text-align: center;
     padding: 20px 20px 20px 160px;
     display: block;
@@ -376,6 +440,8 @@ header .mainMenu ul li a.active{
 .main-timeline .timeline-content:hover{ text-decoration: none; }
 .main-timeline .timeline-content:before{
     content: "";
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(52%, #952000));
+    background: -o-linear-gradient(bottom right, transparent 50%, #952000 52%);
     background: linear-gradient(to top left, transparent 50%, #952000 52%);
     width: 60px;
     height: 20px;
@@ -388,9 +454,11 @@ header .mainMenu ul li a.active{
     line-height: 50px;
     width: 60px;
     height: 60px;
-    border: 4px solid #fff;
+    border: 4px solid var(--white-color);
     border-radius: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: absolute;
     left: 80px;
     top: 50%;
@@ -408,16 +476,22 @@ header .mainMenu ul li a.active{
     position: absolute;
     top: -20px;
     left: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .main-timeline .timeline-year .year-details h4,.main-timeline .timeline-year .year-details h6{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 18px;
 }
 .main-timeline .timeline-year .year-details h5{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
 }
 .main-timeline .timelineTitle{
@@ -428,7 +502,7 @@ header .mainMenu ul li a.active{
     margin: 0 0 7px 0;
 }
 .main-timeline .timelineDescription{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 15px;
     letter-spacing: 1px;
     margin: 0;
@@ -439,7 +513,8 @@ header .mainMenu ul li a.active{
 }
 .main-timeline .timeline:nth-child(even) .timeline-content{ padding: 20px 160px 20px 20px; }
 .main-timeline .timeline:nth-child(even) .timeline-content:before{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     left: auto;
     right: 0;
 }
@@ -453,16 +528,22 @@ header .mainMenu ul li a.active{
 }
 .main-timeline .timeline:nth-child(4n+2) .timeline-content{ background: #1862F7; }
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:before{
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(52%, #012E95));
+    background: -o-linear-gradient(bottom right, transparent 50%, #012E95 52%);
     background: linear-gradient(to top left, transparent 50%, #012E95 52%);
 }
 .main-timeline .timeline:nth-child(4n+2) .timeline-year{ background: #3473FF; }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content{ background: #22a009; }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before{
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(52%, #123a0a));
+    background: -o-linear-gradient(bottom right, transparent 50%, #123a0a 52%);
     background: linear-gradient(to top left, transparent 50%, #123a0a 52%);
 }
 .main-timeline .timeline:nth-child(4n+3) .timeline-year{ background: #28b50c; }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content{ background: #F61945; }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(52%, #95001D));
+    background: -o-linear-gradient(bottom right, transparent 50%, #95001D 52%);
     background: linear-gradient(to top left, transparent 50%, #95001D 52%);
 }
 .main-timeline .timeline:nth-child(4n+4) .timeline-year{ background: #FE3559; }
@@ -486,7 +567,9 @@ header .mainMenu ul li a.active{
     .main-timeline .timeline-content:before,
     .main-timeline .timeline:nth-child(even) .timeline-content:before{
         width: 60px;
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
         bottom: auto;
         top: 20px;
         left: -20px;
@@ -502,7 +585,9 @@ header .mainMenu ul li a.active{
     }
     .main-timeline .timeline-icon,
     .main-timeline .timeline:nth-child(even) .timeline-icon{
-        transform: translateX(-50%) translateY(0);
+        -webkit-transform: translateX(-50%) translateY(0);
+            -ms-transform: translateX(-50%) translateY(0);
+                transform: translateX(-50%) translateY(0);
         top: 75px;
         left: 50%;
         right: auto;
@@ -522,21 +607,23 @@ header .mainMenu ul li a.active{
     background: rgb(233 233 233);
 }
 .pricingTable .pricingTitle{
-    color: #01a0eb;
+    color: var(--blue-color);
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0 0 10px;
 }
 .pricingTable .pricingSubTitle{
-    color: #000000;
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
     margin: 0 0 10px;
 }
 .pricingTable .price-value{
-    color: #fff;
+    color: var(--white-color);
+    background: -webkit-gradient(linear,left top, right bottom,from(#25c648),to(#21a313));
+    background: -o-linear-gradient(left top,#25c648,#21a313);
     background: linear-gradient(to right bottom,#25c648,#21a313);
     height: 150px;
     width: 150px;
@@ -548,9 +635,12 @@ header .mainMenu ul li a.active{
 }
 .pricingTable .price-value:before{
     content: '';
+    background: -webkit-gradient(linear,right bottom, left top,from(#25c648),to(#21a313));
+    background: -o-linear-gradient(right bottom,#25c648,#21a313);
     background: linear-gradient(to left top,#25c648,#21a313);
     border-radius: inherit;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.2) inset;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.2) inset;
     position: absolute;
     left: 12px;
     top: 12px;
@@ -579,6 +669,8 @@ header .mainMenu ul li a.active{
     display: block;
 }
 .pricingTable .pricing-content{
+    background: -webkit-gradient(linear,left top, right bottom,from(#25c648),to(#21a313));
+    background: -o-linear-gradient(left top,#25c648,#21a313);
     background: linear-gradient(to right bottom,#25c648,#21a313);
     padding: 30px 20px 60px;
     margin: 0;
@@ -597,7 +689,7 @@ header .mainMenu ul li a.active{
 }
 .pricingTable .pricing-content li:before {
     content: "\f00c";
-    color: white;
+    color: var(--white-color);;
     font-family: "Font Awesome 5 Free";
     font-size: 10px;
     font-weight: 900;
@@ -612,9 +704,11 @@ header .mainMenu ul li a.active{
     border: 1px solid var(--white-color);
 }
 .pricingTable .pricing-content li:last-child{ margin-bottom: 0; }
-.pricingTable .pricing-content li strong{ color: #fff; }
+.pricingTable .pricing-content li strong{ color: var(--white-color); }
 .pricingTable .pricingTable-signup a {
-    color: #fff;
+    color: var(--white-color);
+    background: -webkit-gradient(linear,left top, right bottom,from(#25c648),to(#21a313));
+    background: -o-linear-gradient(left top,#25c648,#21a313);
     background: linear-gradient(to right bottom,#25c648,#21a313);
     font-size: 20px;
     font-weight: 400;
@@ -624,25 +718,33 @@ header .mainMenu ul li a.active{
     padding: 12px 25px;
     margin: -30px auto 0;
     border: none;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
     border-radius: 15px;
     display: block;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .pricingTable .pricingTable-signup a:hover{
-    color: #fff;
-    box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
+    color: var(--white-color);
+    -webkit-box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
 }
-.pricingTable.blue .price-value{ background: linear-gradient(to right bottom,#01AFED,#0097EA); }
-.pricingTable.blue .price-value:before{ background: linear-gradient(to left top,#01AFED,#0097EA); }
+.pricingTable.blue .price-value{ background: -webkit-gradient(linear,left top, right bottom,from(#01AFED),to(#0097EA)); background: -o-linear-gradient(left top,#01AFED,#0097EA); background: linear-gradient(to right bottom,#01AFED,#0097EA); }
+.pricingTable.blue .price-value:before{ background: -webkit-gradient(linear,right bottom, left top,from(#01AFED),to(#0097EA)); background: -o-linear-gradient(right bottom,#01AFED,#0097EA); background: linear-gradient(to left top,#01AFED,#0097EA); }
 .pricingTable.blue .pricing-content,
 .pricingTable.blue .pricingTable-signup a{
+    background: -webkit-gradient(linear,left top, right bottom,from(#01AFED),to(#0097EA));
+    background: -o-linear-gradient(left top,#01AFED,#0097EA);
     background: linear-gradient(to right bottom,#01AFED,#0097EA);
 }
-.pricingTable.pink .price-value{ background: linear-gradient(to right bottom,#FF4EA5,#FE0879); }
-.pricingTable.pink .price-value:before{ background: linear-gradient(to left top,#FF4EA5,#FE0879); }
+.pricingTable.pink .price-value{ background: -webkit-gradient(linear,left top, right bottom,from(#FF4EA5),to(#FE0879)); background: -o-linear-gradient(left top,#FF4EA5,#FE0879); background: linear-gradient(to right bottom,#FF4EA5,#FE0879); }
+.pricingTable.pink .price-value:before{ background: -webkit-gradient(linear,right bottom, left top,from(#FF4EA5),to(#FE0879)); background: -o-linear-gradient(right bottom,#FF4EA5,#FE0879); background: linear-gradient(to left top,#FF4EA5,#FE0879); }
 .pricingTable.pink .pricing-content,
 .pricingTable.pink .pricingTable-signup a{
+    background: -webkit-gradient(linear,left top, right bottom,from(#FF4EA5),to(#FE0879));
+    background: -o-linear-gradient(left top,#FF4EA5,#FE0879);
     background: linear-gradient(to right bottom,#FF4EA5,#FE0879);
 }
 @media only screen and (max-width: 990px){
@@ -652,7 +754,7 @@ header .mainMenu ul li a.active{
 .progress-title{
     font-size: 14px;
     font-weight: 400;
-    color: #000;
+    color: var(--black-color);
     margin: 0 0 30px;
     font-weight: 600;
 }
@@ -669,9 +771,11 @@ header .mainMenu ul li a.active{
 }
 .progress .progress-bar{
     border-radius: 15px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     position: relative;
-    animation: animate-positive 2s;
+    -webkit-animation: animate-positive 2s;
+            animation: animate-positive 2s;
     width: 65%;
 }
 .progress .progress-icon,
@@ -680,7 +784,7 @@ header .mainMenu ul li a.active{
     height: 50px;
     border-radius: 50%;
     line-height: 37px;
-    background: #fff;
+    background: var(--white-color);
     border: 7px solid #1f75c4;
     font-size:12px;
     font-weight: 700;
@@ -760,8 +864,8 @@ header .mainMenu ul li a.active{
 }
 .progress.git .progress-icon,
 .progress.git .progress-value{
-    border: 7px solid #000000;
-    color: #000000;
+    border: 7px solid var(--black-color);
+    color: var(--black-color);
 }
 
 .progress.html .progress-icon,
@@ -829,7 +933,7 @@ header .mainMenu ul li a.active{
 .navColor{
     color: var(--primary-color);
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 400;
     font-size: 16px;
 }
@@ -840,14 +944,14 @@ header .mainMenu ul li a.active{
 .navColor:hover{
     color: var(--primary-color) !important;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 400;
     font-size: 16px;
 }
 .navColorScroll{
     color: var(--secondary-color) !important;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 400;
     font-size: 16px;
 }
@@ -890,7 +994,7 @@ header .mainMenu ul li a.active{
     color: var(--primary-color);
 }
 .myDetails .topContent .topSubTitle{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 600;
     font-size: 22px;
     color: var(--blue-color);
@@ -907,8 +1011,12 @@ header .mainMenu ul li a.active{
     text-align: justify;
 }
 .myDetails .topContent .buttonList{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .myDetails .topContent .buttonList .myVideoBtn {
     font-size: 38px;
@@ -933,14 +1041,14 @@ header .mainMenu ul li a.active{
     color: var(--secondary-color);
 }
 .projectCard p{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 300;
     color: var(--text-color);
     margin-bottom: 5px;
 }
 .projectCard .projectPrice{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: 14px;
     color: var(--blue-color);
@@ -988,22 +1096,25 @@ header .mainMenu ul li a.active{
 }
 .recentSubTitle {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-color);
     font-weight: 400;
 }
 .recentCard{
-    box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+    -webkit-box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+            box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
     border-radius: 4px;
     border: none;
 }
 .recentCard:hover{
-    box-shadow: 0 0 8px 0 rgba(46,205,113,0.5);
+    -webkit-box-shadow: 0 0 8px 0 rgba(46,205,113,0.5);
+            box-shadow: 0 0 8px 0 rgba(46,205,113,0.5);
 }
 /*recentCard ends*/
 .videoCard{
     padding: 6rem 3rem;
-    box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+    -webkit-box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+            box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
     margin: 50px auto;
 }
 .videoTitle{
@@ -1014,15 +1125,25 @@ header .mainMenu ul li a.active{
 }
 .videoDescription{
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-color) !important;
     font-weight: 400;
     text-align: center;
 }
-.videoBtn {
-	font-size: 50px;
-	color: var(--secondary-color);
-	cursor: pointer;
+.videoBtn.btn.btn-primary {
+    font-size: 36px;
+    color: var(--white-color);
+    cursor: pointer;
+    background: transparent;
+    outline: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.videoBtn.btn.btn-primary:hover{
+    color: var(--blue-color);
+    outline: 0;
 }
 /*Video Components ends*/
 .clientImg{
@@ -1052,10 +1173,19 @@ header .mainMenu ul li a.active{
     width: 100%;
 }
 .bannerContent{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 350px;
 }
 .bannerContent .bannerSub{
@@ -1064,6 +1194,7 @@ header .mainMenu ul li a.active{
     text-transform: capitalize;
 }
 /*AllPageBanner components ends*/
+
 /*processStep starts*/
 .processStep{
     text-align: center;
@@ -1082,28 +1213,41 @@ header .mainMenu ul li a.active{
     background: #11c6fd;
 }
 .processStep.stepFirst:hover{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
+    background: -webkit-gradient(linear, left bottom, left top, from(#00c6fb), to(#005bea));
+    background: -o-linear-gradient(bottom, #00c6fb 0%, #005bea 100%);
     background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 .processStep.stepSecond{
     background: var(--primary-color);
 }
 .processStep.stepSecond:hover{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
+    background: -o-radial-gradient(6% 18%, 862px, rgb(21, 219, 149) 9.4%, rgb(26, 35, 160) 83.6%);
     background: radial-gradient(862px at 6% 18%, rgb(21, 219, 149) 9.4%, rgb(26, 35, 160) 83.6%);
 }
 .processStep.stepThird{
     background: #fe2b4b;
 }
 .processStep.stepThird:hover{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
+    background: -o-radial-gradient(10% 20%, circle, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
     background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
 }
 .processStep.stepFour{
     background: #002454;
 }
 .processStep.stepFour:hover{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
+    background: -o-linear-gradient(269deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
     background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
 }
 /*processStep ends*/
@@ -1129,17 +1273,17 @@ header .mainMenu ul li a.active{
 /*Skills Page starts*/
 .part {
     margin-top: 50px;
-    border: 2px solid #00cd7b;
+    border: 2px solid var(--secondary-green);
     padding: 0px 30px;
 }
 .myTable {
-    border: 2px solid #00cd7b;
+    border: 2px solid var(--secondary-green);
 }
 .table thead th {
-    border-bottom: 2px solid #00cd7b;
+    border-bottom: 2px solid var(--secondary-green);
 }
 .table td, .table th {
-    border-top: 1px solid #00cd7b;
+    border-top: 1px solid var(--secondary-green);
 }
 .part a{
     color: var(--secondary-color);
@@ -1150,7 +1294,7 @@ header .mainMenu ul li a.active{
     text-align: center;
 }
 .aboutMe .myInfo h2{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: 22px;
     color: var(--primary-color);
@@ -1186,7 +1330,7 @@ header .mainMenu ul li a.active{
 }
 .contactDesign .contactForm h3{
     font-size: 22px;
-    color: white;
+    color: var(--white-color);;
     margin-bottom: 20px;
 }
 
@@ -1194,8 +1338,21 @@ header .mainMenu ul li a.active{
     background: transparent !important;
     border-color: var(--blue-color);
     outline: 0;
-    color: white;
-    box-shadow: none;
+    color: var(--white-color);;
+    -webkit-box-shadow: none;;
+            box-shadow: none;
+}
+.form-control::-webkit-input-placeholder {
+    color: var(--white-color);
+}
+.form-control::-moz-placeholder {
+    color: var(--white-color);
+}
+.form-control:-ms-input-placeholder {
+    color: var(--white-color);
+}
+.form-control::-ms-input-placeholder {
+    color: var(--white-color);
 }
 .contactDesign .contactForm textarea,.form-control::placeholder {
     color: var(--white-color);
@@ -1210,7 +1367,8 @@ header .mainMenu ul li a.active{
     background-color: transparent;
     border-color: var(--primary-color);
     outline: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .contactDesign .contactDetails li{
@@ -1226,26 +1384,33 @@ header .mainMenu ul li a.active{
 }
 .contactDetails .detailList h3{
     font-size: 22px;
-    color: white;
+    color: var(--white-color);;
 }
 .contactDetails .detailList p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 16px;
-    color: white;
+    color: var(--white-color);;
     margin-bottom: 0px;
+}
+.contactDetails .detailList p svg{
+    margin-right: 5px;
 }
 .contactDetails .detailList p i{
     font-size: 13px;
     margin-right: 8px;
 }
 .submit__right{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     margin-top: 25px;
 }
 .form-check-label {
     margin-bottom: 0;
-    color: white;
+    color: var(--white-color);
 }
 input:-internal-autofill-selected{
     background: transparent;
@@ -1258,7 +1423,7 @@ input:-internal-autofill-selected{
     padding: 15px 0px;
     font-size: 16px;
     color: #3c403b;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-poppins);
     text-align: justify;
 }
 /*Refund Page Ends*/
@@ -1275,15 +1440,15 @@ input:-internal-autofill-selected{
     color: var(--secondary-color);
     padding: 10px 0px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-poppins);
 }
 .warSub{
     font-size: 40px;
-    color: #00cd7b;
+    color: var(--secondary-green);
 }
 .nopage span{
     font-size: 20px;
-    color: #00cd7b;
+    color: var(--secondary-green);
 }
 .nopage span a{
     color: var(--secondary-color);
@@ -1307,10 +1472,12 @@ input:-internal-autofill-selected{
     height: 200px;
 }
 .mainCard .cardImage img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .mainCard .cardImage img.imageContain{
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .mainCard .cardBody{
     padding: 15px;
@@ -1323,9 +1490,15 @@ input:-internal-autofill-selected{
     margin-bottom: 10px;
 }
 .mainCard .cardButtons ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .mainCard .cardButtons ul li{
     width: 100%;
@@ -1353,14 +1526,14 @@ input:-internal-autofill-selected{
 }
 .reviewTitle {
 	font-size: 22px;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--font-poppins);
 	color: var(--primary-color) !important;
 	font-weight: 600;
 	padding: 10px 0px 0px;
 }
 .reviewDescription{
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-color) !important;
     font-weight: 400;
     text-align: center;
@@ -1374,7 +1547,8 @@ input:-internal-autofill-selected{
 /*footer starts*/
 .footerPart{
     margin-top: 5rem;
-    box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+    -webkit-box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
+            box-shadow: 0 0 4px 0 rgba(46,205,113,0.3);
     background: #0e1c2b;
     padding: 2rem 0rem 0rem 0rem;
 }
@@ -1387,7 +1561,7 @@ input:-internal-autofill-selected{
 }
 .footerDetails{
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     color: var(bl) !important;
     font-weight: 400;
     text-align: justify;
@@ -1401,7 +1575,7 @@ input:-internal-autofill-selected{
 .footerMenu li{
     margin-right: 10px;
     color: var(--white-color);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     padding-bottom: 10px;
 }
@@ -1410,7 +1584,7 @@ input:-internal-autofill-selected{
 }
 .footerMenu li a{
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     color: var(--white-color);
 }
@@ -1419,7 +1593,7 @@ input:-internal-autofill-selected{
 }
 .socialDes {
 	font-size: 16px;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--font-poppins);
 	color: var(--secondary-color) !important;
 	font-weight: 300;
     margin-bottom: 10px;
@@ -1427,6 +1601,8 @@ input:-internal-autofill-selected{
 .lastMenu {
     list-style: none;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
 }
@@ -1450,6 +1626,8 @@ input:-internal-autofill-selected{
 }
 .lastMenu li a:hover{
     background: var(--secondary-color);
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
     transition: all linear .4s;
 }
 
@@ -1465,6 +1643,8 @@ input:-internal-autofill-selected{
 }
 .copyRight a:hover{
     color: var(--primaryColor) !important;
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
     transition: all linear .4s;
 }
 /*Footer components ends*/
