@@ -9,8 +9,6 @@ import WorkingProgress from "@/Components/WorkingProgress";
 
 export const metadata = {
   title: 'Md H H Martin | Home',
-  description: 'I am Md H H Martin. I can provide you Web design, Web Development, graphics design and Search Engine Optimization (SEO) in professional way.',
-  keywords: 'Md H H Martin, Martin Software Engineer, bmhhmartin, Web Developer Martin, Martin Next JS Developer, Hasnat Hanjala Martin, Stock Phtographer Martin, Photographer Martin'
 }
 
 const HomePage =()=>{
