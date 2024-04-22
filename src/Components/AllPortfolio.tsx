@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -7,7 +8,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import gallery from '../images/gallery1.jpg';
 
-const AllPortfolio =()=>{
+const AllPortfolio: React.FC = () => {
     return (
         <>
             <Container>
