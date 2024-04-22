@@ -1634,3 +1634,8 @@ input:-internal-autofill-selected{
     transition: all linear .4s;
 }
 /*Footer components ends*/
+.slick-slide img {
+    display: inline-block !important;
+    text-align: center;
+}
+/*Overrride code ends*/
