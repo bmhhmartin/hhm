@@ -109,6 +109,9 @@
         background: -o-radial-gradient(10% 20%, circle, rgb(221, 49, 49) 0%, rgb(159 13 13) 90%);
         background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(159 13 13) 90%);
     }
+    .fullDetails .topContent .contentList ul {
+        justify-content: center;
+    }
     .fullDetails {
         gap: 20px;
         -webkit-box-orient: vertical;
