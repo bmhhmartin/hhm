@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
+import { FaCheck } from "react-icons/fa6";
+
 
 const PricingList =()=>{
     return (
@@ -23,11 +25,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Dynamic Site</li>
-                                            <li>Technology: WordPress</li>
-                                            <li>Source Code Provide</li>
-                                            <li>30 Days free Service</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Dynamic Site</li>
+                                            <li><FaCheck/>Technology: WordPress</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>30 Days free Service</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                              <Link href="/contact">Hire Me</Link>
@@ -45,11 +47,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Dynamic Site</li>
-                                            <li>Technology: React+Rest API</li>
-                                            <li>Source Code Provide</li>
-                                            <li>30days free Service</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Dynamic Site</li>
+                                            <li><FaCheck/>Technology: React+Rest API</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>30days free Service</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -67,11 +69,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Dynamic Site</li>
-                                            <li>Technology: React+Rest API,Laravel</li>
-                                            <li>Source Code Provide</li>
-                                            <li>60days free Service</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Dynamic Site</li>
+                                            <li><FaCheck/>Technology: React+Rest API,Laravel</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>60days free Service</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -93,11 +95,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Static Site</li>
-                                            <li>Technology: HTML,CSS,Bootstrap</li>
-                                            <li>Source Code Provide</li>
-                                            <li>1 page Site</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Static Site</li>
+                                            <li><FaCheck/>Technology: HTML,CSS,Bootstrap</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>1 page Site</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -115,11 +117,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Static Site</li>
-                                            <li>Technology: HTML,CSS,Bootstrap</li>
-                                            <li>Source Code Provide</li>
-                                            <li>Max 5 pages</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Static Site</li>
+                                            <li><FaCheck/>Technology: HTML,CSS,Bootstrap</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>Max 5 pages</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -137,11 +139,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Full Ecommerce Site</li>
-                                            <li>Technology: HTML,CSS,Bootstrap, JQuery</li>
-                                            <li>Source Code Provide</li>
-                                            <li>Max 15 pages</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Full Ecommerce Site</li>
+                                            <li><FaCheck/>Technology: HTML,CSS,Bootstrap, JQuery</li>
+                                            <li><FaCheck/>Source Code Provide</li>
+                                            <li><FaCheck/>Max 15 pages</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -163,11 +165,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Poster Design</li>
-                                            <li>Delivery: 3 Days</li>
-                                            <li>Provide Source File</li>
-                                            <li>JPG,PNG,EPS File</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/><FaCheck/>Poster Design</li>
+                                            <li><FaCheck/><FaCheck/>Delivery: 3 Days</li>
+                                            <li><FaCheck/><FaCheck/>Provide Source File</li>
+                                            <li><FaCheck/><FaCheck/>JPG,PNG,EPS File</li>
+                                            <li><FaCheck/><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -185,11 +187,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Business Card Design</li>
-                                            <li>Delivery: 3 Days</li>
-                                            <li>Provide Source File</li>
-                                            <li>JPG,PNG,EPS File</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Business Card Design</li>
+                                            <li><FaCheck/>Delivery: 3 Days</li>
+                                            <li><FaCheck/>Provide Source File</li>
+                                            <li><FaCheck/>JPG,PNG,EPS File</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -207,11 +209,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Logo Design</li>
-                                            <li>Delivery: 3 Days</li>
-                                            <li>Provide Source File</li>
-                                            <li>JPG,PNG,EPS File</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Logo Design</li>
+                                            <li><FaCheck/>Delivery: 3 Days</li>
+                                            <li><FaCheck/>Provide Source File</li>
+                                            <li><FaCheck/>JPG,PNG,EPS File</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>
@@ -234,11 +236,11 @@ const PricingList =()=>{
                                             </div>
                                         </div>
                                         <ul className="pricing-content">
-                                            <li>Keyword Provide</li>
-                                            <li>Domain Selection</li>
-                                            <li>Image optimization</li>
-                                            <li>Delivery: 3 Months</li>
-                                            <li>24/7 Support</li>
+                                            <li><FaCheck/>Keyword Provide</li>
+                                            <li><FaCheck/>Domain Selection</li>
+                                            <li><FaCheck/>Image optimization</li>
+                                            <li><FaCheck/>Delivery: 3 Months</li>
+                                            <li><FaCheck/>24/7 Support</li>
                                         </ul>
                                         <div className="pricingTable-signup">
                                             <Link href="/contact">Hire Me</Link>

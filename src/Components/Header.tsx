@@ -38,6 +38,7 @@ const Header =()=>{
                         <li><Link href="/" className={pathName == "/" ? 'active' : ''}>Home</Link></li>
                         <li><Link href="/about" className={pathName == "/about" ? 'active' : ''}>About</Link></li>
                         <li><Link href="/portfolio" className={pathName == "/portfolio" ? 'active' : ''}>Portfolio</Link></li>
+                        <li><Link href="/pricing" className={pathName == "/pricing" ? 'active' : ''}>Pricing</Link></li>
                         <li><Link href="/skills" className={pathName == "/skills" ? 'active' : ''}>Skills</Link></li>
                         <li><Link href="/contact" className={pathName == "/contact" ? 'active' : ''}>Contact</Link></li>
                     </ul>
@@ -54,6 +55,7 @@ const Header =()=>{
                         <li><Link href="/" onClick={menuClose} className={pathName == "/" ? 'active' : ''}>Home</Link></li>
                         <li><Link href="/about" onClick={menuClose} className={pathName == "/about" ? 'active' : ''}>About</Link></li>
                         <li><Link href="/portfolio" onClick={menuClose} className={pathName == "/portfolio" ? 'active' : ''}>Portfolio</Link></li>
+                        <li><Link href="/pricing" onClick={menuClose} className={pathName == "/pricing" ? 'active' : ''}>Pricing</Link></li>
                         <li><Link href="/skills" onClick={menuClose} className={pathName == "/skills" ? 'active' : ''}>Skills</Link></li>
                         <li><Link href="/contact" onClick={menuClose} className={pathName == "/contact" ? 'active' : ''}>Contact</Link></li>
                     </ul>

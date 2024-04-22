@@ -684,24 +684,11 @@ header .mainMenu ul li a.active{
     line-height: 25px;
     position: relative;
     text-align: left;
-    padding-left: 48px;
+    padding-left: 16px;
     margin-bottom: 15px;
 }
-.pricingTable .pricing-content li:before {
-    content: "\f00c";
-    color: var(--white-color);;
-    font-family: "Font Awesome 5 Free";
-    font-size: 10px;
-    font-weight: 900;
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: 3px;
-    left: 15px;
-    text-align: center;
-    border: 1px solid var(--white-color);
+.pricingTable .pricing-content li svg{
+    margin-right: 10px;
 }
 .pricingTable .pricing-content li:last-child{ margin-bottom: 0; }
 .pricingTable .pricing-content li strong{ color: var(--white-color); }
@@ -1465,7 +1452,6 @@ input:-internal-autofill-selected{
     border: 1px solid var(--primary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-bottom: 20px;
 }
 .mainCard .cardImage{
     position: relative;
