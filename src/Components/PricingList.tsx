@@ -249,7 +249,7 @@ const PricingList =()=>{
                                 </Col>
                             </Row>
                         </Tab>
-                        <Tab eventKey="Mobile Apps" title="Mobile Apps">
+                        <Tab eventKey="Photography" title="Photography">
                             <Row>
                                 <Col>
                                     <p className="subTitle text-center">Coming Soon.....</p>

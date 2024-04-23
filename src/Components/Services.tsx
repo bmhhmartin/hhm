@@ -28,7 +28,7 @@ const Services =()=>{
                                 <Image src={graphics} width={100} height={100} alt='icon'></Image>
                             </div>
                             <h2>Graphics Design</h2>
-                            <p>I design static and dynamic web application as per your requirements</p>
+                            <p>I design your graphical interface according to your requirements</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
                     </Col>
@@ -38,7 +38,7 @@ const Services =()=>{
                                 <Image src={seo} width={100} height={100} alt='icon'></Image>
                             </div>
                             <h2>SEO</h2>
-                            <p>I design static and dynamic web application as per your requirements</p>
+                            <p>I am working for updating your site ranking</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
                     </Col>
@@ -48,7 +48,7 @@ const Services =()=>{
                                 <Image src={photography} width={100} height={100} alt='icon'></Image>
                             </div>
                             <h2>Stock Photography</h2>
-                            <p>I design static and dynamic web application as per your requirements</p>
+                            <p>I capture the stock photography for commercial uses</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
                     </Col>

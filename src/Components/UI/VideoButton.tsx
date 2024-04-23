@@ -7,7 +7,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 const VideoButton =()=>{
     return (
         <>
-            <Button className="videoBtn" onClick={()=>{alert("This feature is coming soon/.........")}}><FaCirclePlay/></Button>
+            <Button className="videoBtn" onClick={()=>{alert("This feature is coming soon.........")}}><FaCirclePlay/></Button>
         </>
     )
 }

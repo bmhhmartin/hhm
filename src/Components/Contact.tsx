@@ -41,7 +41,7 @@ const Contact =()=>{
                                     </li>
                                     <li>
                                         <div className="detailList">
-                                            <h3>Web</h3>
+                                            <h3>Website</h3>
                                             <p>
                                                 <FaGlobe/>
                                                 https://bmhhmartin.vercel.app/

@@ -49,6 +49,18 @@ a:hover{
     --red-color: #ff3b4e;
     --blue-color: #1da1f2;
 }
+
+.primary--color{
+    color: var(--primary-color) !important;
+}
+
+.secondary--color{
+    color: var(--secondary-color) !important;
+}
+
+.blue--color{
+    color: var(--blue-color) !important;
+}
 /*color-palette ends*/
 header{
     display: -webkit-box;
@@ -415,6 +427,17 @@ header .mainMenu ul li a.active{
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     border-color: transparent;
+}
+/*Nav design ends*/
+.nav-justified .nav-item, .nav-justified>.nav-link {
+    flex-basis: auto;
+}
+li.nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-tabs .nav-link {
+    width: 100%;
 }
 /*Nav design ends*/
 /*Timeline design start*/
@@ -1513,7 +1536,7 @@ input:-internal-autofill-selected{
 .reviewTitle {
 	font-size: 22px;
 	font-family: var(--font-poppins);
-	color: var(--primary-color) !important;
+	color: var(--primary-color);
 	font-weight: 600;
 	padding: 10px 0px 0px;
 }
@@ -1580,7 +1603,7 @@ input:-internal-autofill-selected{
 .socialDes {
 	font-size: 16px;
 	font-family: var(--font-poppins);
-	color: var(--secondary-color) !important;
+	color: var(--white-color) !important;
 	font-weight: 300;
     margin-bottom: 10px;
 }

@@ -45,64 +45,39 @@ const Partner =()=>{
     return (
         <>
             <Container>
-                    <h2 className="title">Partner</h2>
+                    <h2 className="title blue--color">Our Partner</h2>
                     <Slider {...partnerSlider}>
                         <Row>
-                            <div className="reviewPart text-center">
+                            <div className="reviewPart p-0 text-center">
                                 <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
+                                <h3 className="reviewTitle secondary--color">Google</h3>
                             </div>
                         </Row>
                         <Row>
-                            <div className="reviewPart text-center">
+                            <div className="reviewPart p-0 text-center">
                                 <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
+                                <h3 className="reviewTitle secondary--color">Google</h3>
                             </div>
                         </Row>
                         <Row>
-                            <div className="reviewPart text-center">
+                            <div className="reviewPart p-0 text-center">
                                 <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
+                                <h3 className="reviewTitle secondary--color">Google</h3>
                             </div>
                         </Row>
                         <Row>
-                            <div className="reviewPart text-center">
+                            <div className="reviewPart p-0 text-center">
                                 <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
+                                <h3 className="reviewTitle secondary--color">Google</h3>
                             </div>
                         </Row>
                         <Row>
-                            <div className="reviewPart text-center">
+                            <div className="reviewPart p-0 text-center">
                                 <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
+                                <h3 className="reviewTitle secondary--color">Google</h3>
                             </div>
                         </Row>
-                        <Row>
-                            <div className="reviewPart text-center">
-                                <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="reviewPart text-center">
-                                <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="reviewPart text-center">
-                                <Image src={partner} height={60} width={200} alt="partner"></Image>
-                                <h3 className="reviewTitle">Google</h3>
-                                <p className="reviewDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere volupt.</p>
-                            </div>
-                        </Row>
+                        
                     </Slider>
             </Container>
         </>
