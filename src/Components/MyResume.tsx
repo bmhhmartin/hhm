@@ -11,7 +11,7 @@ const MyResume =()=>{
                 <Row>
                     <Col lg={6} md={6} sm={12} className="d-inline-grid">
                         <div className="part pt-3">
-                            <h2 className="subTitle">Skills Details</h2>
+                            <h3 className="subTitle">Skills Details</h3>
                             <div className="step">
                                 <h3 className="cardTitle"><FaStar />Next JS</h3>
                                 <p className="details text-justify">Next JS Route Feature, Next Authentication, CSR, SSR</p>

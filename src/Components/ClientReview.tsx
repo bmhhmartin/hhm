@@ -48,7 +48,7 @@ const ClientReview =()=>{
     return (
         <>
             <Container>
-                    <h2 className="title">Client Review</h2>
+                    <h3 className="title">Client Review</h3>
                     <div className="slider-container">
                         <Slider {...clientSlider}>
                             <div className="reviewPart text-center">

@@ -12,46 +12,46 @@ const Summary =()=>{
                         <Col className="summaryContent" lg={12} md={12} sm={12}>
                             <Row>
                                 <Col lg={3} md={6} sm={6} className="text-center">
-                                    <h2>
+                                    <h3>
                                         <CountUp start={0} end={81}>
                                             {({ countUpRef }) => (
                                                 <span ref={countUpRef} />
                                             )}
                                         </CountUp>
                                         +   
-                                    </h2>
+                                    </h3>
                                     <h4>Total Projects</h4>
                                 </Col>
                                 <Col lg={3} md={6} sm={6} className="text-center">
-                                    <h2>
+                                    <h3>
                                         <CountUp start={0} end={29}>
                                             {({ countUpRef }) => (
                                                 <span ref={countUpRef} />
                                             )}
                                         </CountUp>
                                         +
-                                    </h2>
+                                    </h3>
                                     <h4>Total Clients</h4>
                                 </Col>
                                 <Col lg={3} md={6} sm={6} className="text-center">
-                                    <h2>
+                                    <h3>
                                         <CountUp start={0} end={564}>
                                             {({ countUpRef }) => (
                                                 <span ref={countUpRef} />
                                             )}
                                         </CountUp>
                                         +
-                                    </h2>
+                                    </h3>
                                     <h4>Cup of Coffee</h4>
                                 </Col>
                                 <Col lg={3} md={6} sm={6} className="text-center">
-                                    <h2>
+                                    <h3>
                                     <CountUp start={0} end={3}>
                                             {({ countUpRef }) => (
                                                 <span ref={countUpRef} />
                                             )}
                                         </CountUp>
-                                    </h2>
+                                    </h3>
                                     <h4>Running Projects</h4>
                                 </Col>
                             </Row>

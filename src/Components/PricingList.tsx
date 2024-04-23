@@ -9,7 +9,7 @@ const PricingList =()=>{
     return (
         <>
             <Container>
-                    <h2 className="title">Pricing List</h2>
+                    <h3 className="title">Pricing List</h3>
                     <Tabs defaultActiveKey="Web Development" id="uncontrolled-tab-example" className="mb-3">
                         <Tab eventKey="Web Development" title="Web Development">
                             <Row>

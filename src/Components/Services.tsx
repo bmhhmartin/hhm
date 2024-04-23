@@ -17,7 +17,7 @@ const Services =()=>{
                             <div className="service_image">
                                 <Image src={web} width={100} height={100} alt='icon'></Image>
                             </div>
-                            <h2>Web Application</h2>
+                            <h3>Web Application</h3>
                             <p>I design static and dynamic web application as per your requirements</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
@@ -27,7 +27,7 @@ const Services =()=>{
                             <div className="service_image">
                                 <Image src={graphics} width={100} height={100} alt='icon'></Image>
                             </div>
-                            <h2>Graphics Design</h2>
+                            <h3>Graphics Design</h3>
                             <p>I design your graphical interface according to your requirements</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
@@ -37,7 +37,7 @@ const Services =()=>{
                             <div className="service_image">
                                 <Image src={seo} width={100} height={100} alt='icon'></Image>
                             </div>
-                            <h2>SEO</h2>
+                            <h3>SEO</h3>
                             <p>I am working for updating your site ranking</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>
@@ -47,7 +47,7 @@ const Services =()=>{
                             <div className="service_image">
                                 <Image src={photography} width={100} height={100} alt='icon'></Image>
                             </div>
-                            <h2>Stock Photography</h2>
+                            <h3>Stock Photography</h3>
                             <p>I capture the stock photography for commercial uses</p>
                             <Link href="/pricing" className="third--btn">Order Now</Link>
                         </div>

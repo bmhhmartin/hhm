@@ -34,7 +34,7 @@ const Analysis =()=>{
     return (
         <>
             <Container>
-                <h2 className="title">Technology Used</h2>
+                <h3 className="title">Technology Used</h3>
                 <Row>
                     <Col>
                         <ResponsiveContainer width="100%" height="100%">
@@ -46,8 +46,7 @@ const Analysis =()=>{
                         </ResponsiveContainer>
                     </Col>
                     <Col lg={6} md={12} sm={12}>
-                        <p className="text-justify details">To build native android apps i use Java as well
-                            as kotline mainly. React JS is used for cross platform mobile application. I use MySQL database
+                        <p className="text-justify details">To build Web Application I use Next js Framework. React JS is used for cross platform mobile application. I use MySQL database
                             for relational database system. To build NoSQL application i use MongoDB. Firebase database system
                             is used where it is necessary to provide realtime data flow facilities.
                         </p>

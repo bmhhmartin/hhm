@@ -1079,7 +1079,7 @@ li.nav-item {
 .summaryContent{
     padding-top: 10%;
 }
-.summaryContent h2{
+.summaryContent h3{
     font-family: var(--font-poppins);
     color: var(--white-color);
     font-weight: 700;
@@ -1167,6 +1167,7 @@ li.nav-item {
     color: var(--secondary-color);
     font-style: italic;
 }
+
 
 .allPageBanner {
     background: url(../image/allpage.jpg);
@@ -1265,7 +1266,7 @@ li.nav-item {
     text-align: center;
     margin-bottom: 20px;
 }
-.serviceCard h2{
+.serviceCard h3{
     font-size: 18px;
     font-weight: 600;
     color: var(--primary-color);
