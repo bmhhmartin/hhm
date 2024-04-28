@@ -10,7 +10,7 @@ const Services =()=>{
     return (
         <>
             <Container>
-                <h2 className="title">My Services</h2>
+                <h3 className="title">My Services</h3>
                 <Row>
                     <Col lg={3} md={6} sm={6}>
                         <div className="serviceCard">

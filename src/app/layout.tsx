@@ -26,7 +26,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Md H H Martin",
   description: 'I am Md H H Martin. I can provide you Web design, Web Development, graphics design, Search Engine Optimization (SEO) and Stock Photography in professional way.',
-  keywords: 'Md H H Martin, Martin Software Engineer, bmhhmartin, Web Developer Martin, Martin Next JS Developer, Hasnat Hanjala Martin, Stock Photographer Martin, Photographer Martin'
+  keywords: 'Md H H Martin, Martin Software Engineer, bmhhmartin, Web Developer Martin, Martin Next JS Developer, Hasnat Hanjala Martin, Stock Photographer Martin, Expressive Capture'
 };
 
 export default function RootLayout({

@@ -46,21 +46,10 @@ const Analysis =()=>{
                         </ResponsiveContainer>
                     </Col>
                     <Col lg={6} md={12} sm={12}>
-                        <p className="text-justify details">To build Web Application I use Next js Framework. React JS is used for cross platform mobile application. I use MySQL database
-                            for relational database system. To build NoSQL application i use MongoDB. Firebase database system
-                            is used where it is necessary to provide realtime data flow facilities.
-                        </p>
-                        
-                        <p className="text-justify details"> I always build dynamic application. Admin panel is the heart of such
-                            kinds of application. I always try to provide sufficient features in admin panel to dominate application.
-                            According to client demand I use PHP OOP, CodeIgniter and Laravel to build admin panel section.
-                        </p>
-
-                        <p className="text-justify details">Application security is a big deal for commercial application. I always
-                            ensure security portion of my application, moreover i build a security alert system, to notify admin when
-                            his system at risk.
-                        </p>
-
+                        <p className="text-justify details">When crafting web applications, I typically rely on Next.js as my go-to framework, appreciated for its versatility and efficiency. Its seamless integration of React and Node.js ensures smooth development and excellent performance. However, every client comes with unique demands and preferences, and I'm always ready to adapt to their specific needs.</p>
+                        <p className="text-justify details">In crafting captivating graphic designs, I employ the precision of Adobe Illustrator, a dynamic tool tailored for vector graphics. With its versatile array of features, I seamlessly sculpt intricate vectors, ensuring each line and curve is meticulously honed to perfection.</p>
+                        <p className="text-justify details">Working in SEO involves a delicate dance between strategy and tools, a harmonious blend of digital finesse and technical prowess. As I delved into the world of SEO ranking, I found myself navigating through a labyrinth of algorithms and keywords, seeking to elevate websites to the pinnacle of search engine results pages.</p>
+                        <p className="text-justify details">When tasked with meeting client demands for stock photography, I rely on my trusty DSLR camera, the Canon 250D, to capture every detail with stunning clarity. Paired with my masterful lens, the Canon 18-135mm IS STM lens, I ensure that each shot is imbued with the perfect balance of precision and creativity.</p>
                     </Col>
                 </Row>
             </Container>

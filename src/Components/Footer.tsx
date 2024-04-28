@@ -30,7 +30,7 @@ const Footer =()=>{
                         </Col>
 
                         <Col lg={3} md={6} sm={12}>
-                            <h2 className="footerTitle"><i className="fas fa-phone mr-2"></i>Contact</h2>
+                            <div className="footerTitle"><i className="fas fa-phone mr-2"></i>Contact</div>
                             <ul className="footerMenu">
                                 <li><FaPhoneAlt />+88 01811 230 332</li>
                                 <li><MdEmail/>engr.bmhhmartin@gmail.com</li>
@@ -39,7 +39,7 @@ const Footer =()=>{
                         </Col>
 
                         <Col lg={3} md={6} sm={12}>
-                        <h2 className="footerTitle"><i className="fas fa-gavel mr-2"></i>Notice</h2>
+                        <div className="footerTitle"><i className="fas fa-gavel mr-2"></i>Notice</div>
                             <ul className="footerMenu">
                                 <li><Link href="/refund">Refund Policy</Link></li>
                                 <li><Link href="/condition">Terms And Condition</Link></li>
@@ -48,7 +48,7 @@ const Footer =()=>{
                         </Col>
                         
                         <Col lg={3} md={6} sm={12}>
-                        <h2 className="footerTitle"><i className="fas fa-comments mr-2"></i>Follow Me</h2>
+                        <div className="footerTitle"><i className="fas fa-comments mr-2"></i>Follow Me</div>
                             <p className="socialDes">Connect with social media</p>
                             <ul className="lastMenu">
                                 <li>

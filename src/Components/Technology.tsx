@@ -6,7 +6,7 @@ const Technology =()=>{
     return (
         <>
             <Container>
-                    <h2 className="title">Technology I used</h2>
+                    <h3 className="title">Technology I used</h3>
                     <Row>
                         <Col lg={6} md={6}>
                             <div className="progressList">

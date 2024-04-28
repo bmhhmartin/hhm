@@ -31,7 +31,7 @@ const AllInfo =()=>{
                 </div>
                 <Row>
                     <Col md={12}>
-                        <h2 className="title">My Life Event</h2>
+                        <h3 className="title">My Life Event</h3>
                         <div className="main-timeline">
                             <div className="timeline">
                                 <Link href="https://selise.ch/" target="_blank" className="timeline-content">

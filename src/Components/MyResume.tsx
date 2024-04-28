@@ -14,7 +14,7 @@ const MyResume =()=>{
                             <h3 className="subTitle">Skills Details</h3>
                             <div className="step">
                                 <h3 className="cardTitle"><FaStar />Next JS</h3>
-                                <p className="details text-justify">Next JS Route Feature, Next Authentication, CSR, SSR</p>
+                                <p className="details text-justify">Enhanced API Routes, Next Authentication, CSR, SSR, Image optimization</p>
                             </div>
 
                             <div className="step">

@@ -46,7 +46,7 @@ const Summary =()=>{
                                 </Col>
                                 <Col lg={3} md={6} sm={6} className="text-center">
                                     <h3>
-                                    <CountUp start={0} end={3}>
+                                        <CountUp start={0} end={3}>
                                             {({ countUpRef }) => (
                                                 <span ref={countUpRef} />
                                             )}

@@ -1476,6 +1476,7 @@ input:-internal-autofill-selected{
     border: 1px solid var(--primary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    position: relative;
 }
 .mainCard .cardImage{
     position: relative;
@@ -1490,7 +1491,7 @@ input:-internal-autofill-selected{
        object-fit: contain;
 }
 .mainCard .cardBody{
-    padding: 15px;
+    padding: 15px 15px 45px 15px;
     text-align: center;
 }
 .mainCard .cardBody h4{
@@ -1498,6 +1499,12 @@ input:-internal-autofill-selected{
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+.mainCard .cardButtons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .mainCard .cardButtons ul{
     display: -webkit-box;
