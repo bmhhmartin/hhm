@@ -49,8 +49,8 @@ const RecentProjects =()=>{
                                 <Image className='imageContain' src={recent} fill={true} alt='Project'></Image>
                             </div>
                             <div className="cardBody">
-                                <h4>Federica Dell'orto Portfolio</h4>
-                                <p>Federica Dell'orto Portfolio</p>
+                                <h4>Federica Dell Orto Portfolio</h4>
+                                <p>Federica Dell Orto Portfolio</p>
                             </div>
                             <div className="cardButtons">
                                 <ul>

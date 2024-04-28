@@ -121,7 +121,7 @@ const AllPortfolio: React.FC = () => {
                                     </div>
                                     <div className="cardBody">
                                         <h4>Site Ranking</h4>
-                                        <p>Site Ranking SEO" refers to the strategies and techniques used to improve a website's visibility and position in search engine results pages (SERPs). It involves optimizing content, keywords, metadata, and technical aspects to enhance organic traffic and online presence.</p>
+                                        <p>Site Ranking SEO refers to the strategies and techniques used to improve a websites visibility and position in search engine results pages (SERPs). It involves optimizing content, keywords, metadata, and technical aspects to enhance organic traffic and online presence.</p>
                                     </div>
                                 </div>
                             </Col>
